@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "A8o7UYHIOtsUYridVAq9TiK2Vw+MRxIS++6S5NUVKWHvfgvyWuWLU/4rczQIFNvaGglHhT2D5LlaLK5PO7ExVA==",
+  "dgSpecHash": "GTjSeqRYgTGXjxL2g+UCZRD1xLX9otiWjxaYeZIpwFlYx8wf02/VcdmwrePp8y732sF9mKDaUwF3/d8CXOIJnw==",
   "success": true,
   "projectFilePath": "/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/Media Library.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/b260fredin/.nuget/packages/nlog/5.1.1/nlog.5.1.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -5,7 +5,11 @@
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>Media_Library</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="5.1.1" />
+  </ItemGroup>
 
 </Project>
