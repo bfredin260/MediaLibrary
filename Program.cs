@@ -15,12 +15,15 @@ do {
         userChoice = getUserChoice();
 
         logger.Info("User choice: \"{0}\"", userChoice);        
-    } while (!verifyUserChoice(userChoice) && userChoice != "");
+    } while (!verifyUserChoice(userChoice));
 
 } while (!verifyUserChoice(userChoice));
 
 logger.Info("Program ended");
 
+
+//  METHODS
+// ---------
 string getUserChoice() {
     try {
         userChoice = Console.ReadLine()
