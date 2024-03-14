@@ -1,0 +1,15 @@
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/bin/Debug/net6.0/Media Library
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/bin/Debug/net6.0/Media Library.deps.json
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/bin/Debug/net6.0/Media Library.runtimeconfig.json
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/bin/Debug/net6.0/Media Library.dll
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/bin/Debug/net6.0/Media Library.pdb
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/Media Library.csproj.AssemblyReference.cache
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/Media Library.GeneratedMSBuildEditorConfig.editorconfig
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/Media Library.AssemblyInfoInputs.cache
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/Media Library.AssemblyInfo.cs
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/Media Library.csproj.CoreCompileInputs.cache
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/Media Library.dll
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/refint/Media Library.dll
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/Media Library.pdb
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/Media Library.genruntimeconfig.cache
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/ref/Media Library.dll
