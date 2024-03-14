@@ -13,3 +13,5 @@
 /Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/Media Library.pdb
 /Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/Media Library.genruntimeconfig.cache
 /Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/ref/Media Library.dll
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/bin/Debug/net6.0/NLog.dll
+/Users/b260fredin/Documents/WCTC/Term 3/NET Databases/Week 8/Media Library/obj/Debug/net6.0/Media Library.csproj.CopyComplete
