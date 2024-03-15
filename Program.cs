@@ -35,7 +35,9 @@ do {
 
             movieFile.AddMovie(movie);
         } else {
-
+            foreach(Movie movie in movieFile.Movies) {
+                Console.WriteLine(movie.Display());
+            }
         }
     }
 
