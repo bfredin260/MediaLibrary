@@ -1,7 +1,7 @@
 using NLog;
 public static class FileScrubber
 {
-    private static NLog.Logger logger = LogManager.LoadConfiguration(Directory.GetCurrentDirectory() + "\\nlog.config").GetCurrentClassLogger();
+    private static Logger logger = LogManager.LoadConfiguration(Directory.GetCurrentDirectory() + "\\nlog.config").GetCurrentClassLogger();
     public static string ScrubMovies(string readFile)
     {
         try
