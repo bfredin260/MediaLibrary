@@ -7,9 +7,12 @@ string path = Directory.GetCurrentDirectory() + "//nlog.config";
 // create instance of Logger
 var logger = LogManager.LoadConfiguration(path).GetCurrentClassLogger();
 
+Console.WriteLine();
 logger.Info("Program started");
 
 string scrubbedFile = FileScrubber.ScrubMovies("movies.csv");
+
+Console.WriteLine();
 logger.Info(scrubbedFile);
 
 MovieFile movieFile = new MovieFile(scrubbedFile);
@@ -192,7 +195,7 @@ bool isValidRuntime(string input) {
 TimeSpan getMovieRuntime() {
     string input;
     bool valid;
-    int[] hhmmss = new int[3];
+    int[] hms = new int[3];
 
     do {
         input = getUserInput("\n\n ADD MOVIE:\n------------\nEnter movie running time (h:m:s)\n\n> ");
@@ -204,15 +207,17 @@ TimeSpan getMovieRuntime() {
         }
     } while (!valid);
 
-    foreach (string value in input.Split(":")) {
-        hhmmss.Append(int.Parse(value));
+    string[] hmsStrings = input.Split(":");
+
+    for (int i = 0; i < hmsStrings.Length; i++) {
+        hms[i] = int.Parse(hmsStrings[i]);
     }
 
-    int hh = hhmmss[0];
-    int mm = hhmmss[1];
-    int ss = hhmmss[2];
+    int h = hms[0];
+    int m = hms[1];
+    int s = hms[2];
 
-    logger.Info("Added runtime of \"{0} hours, {1} minutes, {2} seconds\" to movie", hh, mm, ss);
+    logger.Info("Added runtime of \"{0} hours, {1} minutes, {2} seconds\" to movie", h, m, s);
 
-    return new TimeSpan(hh, mm, ss);
+    return new TimeSpan(h, m, s);
 }

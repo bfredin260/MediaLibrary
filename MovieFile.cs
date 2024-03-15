@@ -63,6 +63,8 @@ public class MovieFile
             }
             // close file when done
             sr.Close();
+
+            Console.WriteLine();
             logger.Info("Movies in file {Count}", Movies.Count);
         }
         catch (Exception ex)

@@ -10,6 +10,8 @@ public static class FileScrubber
             string ext = readFile.Split('.').Last();
             string writeFile = readFile.Replace(ext, $"scrubbed.{ext}");
 
+            Console.WriteLine();
+
             // if writeFile exists, the file has already been scrubbed
             if (File.Exists(writeFile))
             {
@@ -72,6 +74,8 @@ public static class FileScrubber
                 }
                 sw.Close();
                 sr.Close();
+
+                Console.WriteLine();
                 logger.Info("File scrub ended");
             }
             return writeFile;
