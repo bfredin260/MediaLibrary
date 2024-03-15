@@ -1,7 +1,7 @@
 using NLog;
 public static class FileScrubber
 {
-    private static Logger logger = LogManager.LoadConfiguration(Directory.GetCurrentDirectory() + "\\nlog.config").GetCurrentClassLogger();
+    private static Logger logger = LogManager.LoadConfiguration(Directory.GetCurrentDirectory() + "//nlog.config").GetCurrentClassLogger();
     public static string ScrubMovies(string readFile)
     {
         try
@@ -9,6 +9,7 @@ public static class FileScrubber
             // determine name of writeFile
             string ext = readFile.Split('.').Last();
             string writeFile = readFile.Replace(ext, $"scrubbed.{ext}");
+
             // if writeFile exists, the file has already been scrubbed
             if (File.Exists(writeFile))
             {
