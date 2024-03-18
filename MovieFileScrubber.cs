@@ -22,12 +22,16 @@ public static class FileScrubber
             {
                 // file has not been scrubbed
                 logger.Info("File scrub started");
+
                 // open write file
                 StreamWriter sw = new StreamWriter(writeFile);
+
                 // open read file
                 StreamReader sr = new StreamReader(readFile);
+
                 // remove first line - column headers
                 sr.ReadLine();
+                
                 while (!sr.EndOfStream)
                 {
                     // create instance of Movie class
