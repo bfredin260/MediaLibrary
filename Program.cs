@@ -25,7 +25,9 @@ do {
     userChoice = getUserChoice();
 
     if(userChoice != "") {
+
         if(userChoice == "1"){
+
             Movie movie = new Movie() {
                 title = getMovieTitle(),
                 genres = getMovieGenres(),
@@ -34,9 +36,20 @@ do {
             };
 
             movieFile.AddMovie(movie);
-        } else {
+
+        } else if(userChoice == "2") {
+
             foreach(Movie movie in movieFile.Movies) {
                 Console.WriteLine(movie.Display());
+            }
+        } else {
+
+            string input = getUserInput("\n\n SEARCH:\n---------\nEnter title, or part of title:\n\n> ");
+
+            foreach(Movie movie in movieFile.Movies) {
+                if(movie.title.ToLower().Contains(input.ToLower())) {
+                    Console.WriteLine("\n" + movie.Display());
+                }
             }
         }
     }
@@ -55,7 +68,7 @@ string getUserInput(string prompt) {
 }
 
 bool isValidChoice(string choice) {
-    return choice == "1" || choice == "2" || choice == "";
+    return choice == "1" || choice == "2" || choice == "3" || choice == "";
 }
 
 string getUserChoice() {
@@ -63,11 +76,11 @@ string getUserChoice() {
     bool valid;
 
     do {
-        choice = getUserInput("\n\n CHOOSE:\n---------\n1) Add Movie\n2) Display All Movies\n\nEnter to quit\n\n> ");        
+        choice = getUserInput("\n\n CHOOSE:\n---------\n1) Add Movie\n2) Display All Movies\n3) Search for Movies\n\nEnter to quit\n\n> ");        
 
         if(choice != "") {
-            choice = choice.ToCharArray()[0]
-                           .ToString()
+            choice = choice.ToCharArray()
+                [0].ToString()
             ;
         }
 
@@ -91,7 +104,10 @@ string getUserChoice() {
         case "2":
             selected = "Display All Movies";
             break;
-        case "":
+        case "3":
+            selected = "Search for Movies";
+            break;
+        default:
             selected = "Quit Program";
             break;
     }
